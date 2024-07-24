@@ -18,15 +18,26 @@ $ sudo pacman -Syu openocd
 
 ### Download
 1. https://code.visualstudio.com/download
-2. https://cmake.org/download/
-3. https://github.com/ninja-build/ninja/releases
-4. https://github.com/openocd-org/openocd/releases/latest
-5. https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
+2. https://cmake.org/download/ (Binary distribution ZIP)
+3. https://github.com/ninja-build/ninja/releases (ninja-win.zip)
+4. https://github.com/openocd-org/openocd/releases/latest (openocd-vxx.x-i686-mingw32.tar.gz)
+5. https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads (Windows (mingw-w64-i686) hosted cross toolchains ZIP)
 
 ### Copy to C://STM32Toolchain
-Add to path:
-1. 
+Should look like this:
+![](images/filestructure.png)
 
+### Add to path
+Should look like this:
+![](images/path.png)
+
+Restart vscode to apply path variables
+
+### Driver Shizzle for cheap fucking ST-Link clone
+1. Delete original  driver
+2. Install Zadig. Download from https://zadig.akeo.ie/
+3. Replace Driver
+![](images/zadig.png)
 
 ## Prepare vscode for debugging
 ```
