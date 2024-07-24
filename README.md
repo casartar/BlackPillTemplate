@@ -42,7 +42,8 @@ Restart vscode to apply path variables
 ## Compile the template
 ```
 $ cd BlackPillTemplate
-$ ./init_ninja
+$ chmod +x init_ninja.sh
+$ ./init_ninja.sh
 $ cd build
 $ ninja
 ```
