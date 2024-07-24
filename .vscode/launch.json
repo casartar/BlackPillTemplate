@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "ST-Link",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${workspaceFolder}/build/BlackPillTemplate.elf",
+            "request": "launch",
+            "serverpath": "/usr/bin/openocd",
+            "servertype": "openocd",
+            "device": "STM32F401",
+            "configFiles": [
+                "/usr/share/openocd/scripts/interface/stlink-v2.cfg",
+                "/usr/share/openocd/scripts/target/stm32f4x.cfg"
+            ],
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/STM32F401.svd",
+            "armToolchainPath": "/usr/bin/"
+        }
+    ]
+}
