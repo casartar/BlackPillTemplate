@@ -47,10 +47,20 @@ Restart vscode to apply path variables
 ![](images/zadig.png)
 
 ## Compile the template
+
+### Manjaro
 ```
 $ cd BlackPillTemplate
 $ chmod +x init_ninja.sh
 $ ./init_ninja.sh
+$ cd build
+$ ninja
+```
+
+### Windows
+```
+$ cd BlackPillTemplate
+$ cmake -B build -G "Ninja" -DCMAKE_TOOLCHAIN_FILE=cmake/gcc-arm-none-eabi.cmake
 $ cd build
 $ ninja
 ```
