@@ -29,6 +29,12 @@ Should look like this:
 ![](images/filestructure.png)
 
 ### Add to path
+```
+C:\STM32Toolchain\arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi\arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi\bin
+C:\STM32Toolchain\cmake-3.30.1-windows-x86_64\bin
+C:\STM32Toolchain\openocd-v0.12.0-i686-w64-mingw32\bin
+C:\STM32Toolchain\ninja-win
+```
 Should look like this:
 ![](images/path.png)
 
