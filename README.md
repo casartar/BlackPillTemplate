@@ -39,7 +39,7 @@ Restart vscode to apply path variables
 3. Replace Driver
 ![](images/zadig.png)
 
-## Prepare vscode for debugging
+## Compile the template
 ```
 $ cd BlackPillTemplate
 $ ./init_ninja
@@ -47,8 +47,9 @@ $ cd build
 $ ninja
 ```
 
-## Compile the template
-
+## Prepare vscode for debugging
 Install vscode Extension marus25.cortex-debug
 Install vscode Extension ms-vscode.cpptools
 If it is not available use "Download Extension" on the right side of https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools and install the vsix file manually.
+
+
