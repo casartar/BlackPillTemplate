@@ -5,13 +5,13 @@
 ```
 $ git clone https://github.com/casartar/BlackPillTemplate.git
 
-$ sudo pacman -Syu code
-$ sudo pacman -Syu cmake
-$ sudo pacman -Syu ninja
-$ sudo pacman -Syu arm-none-eabi-gcc
-$ sudo pacman -Syu arm-none-eabi-newlib
-$ sudo pacman -Syu arm-none-eabi-gdb
-$ sudo pacman -Syu openocd
+$ sudo pacman -S code
+$ sudo pacman -S cmake
+$ sudo pacman -S ninja
+$ sudo pacman -S arm-none-eabi-gcc
+$ sudo pacman -S arm-none-eabi-newlib
+$ sudo pacman -S arm-none-eabi-gdb
+$ sudo pacman -S openocd
 ```
 
 ## Installation Windows
