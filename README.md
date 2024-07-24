@@ -1,10 +1,11 @@
 # BlackPillTemplate
 
-## Installation Manjaro
-
+## Get the template
 ```
 $ git clone https://github.com/casartar/BlackPillTemplate.git
-
+```
+## Installation Manjaro
+```
 $ sudo pacman -S code
 $ sudo pacman -S cmake
 $ sudo pacman -S ninja
