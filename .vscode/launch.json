@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "ST-Link",
+            "name": "ST-Link Linux",
             "cwd": "${workspaceFolder}",
             "type": "cortex-debug",
             "executable": "${workspaceFolder}/build/BlackPillTemplate.elf",
@@ -17,6 +17,24 @@
             "runToEntryPoint": "main",
             "svdFile": "${workspaceFolder}/STM32F401.svd",
             "armToolchainPath": "/usr/bin/"
+        },
+        {
+            "name": "ST-Link-Windows",
+            "cwd": "${workspaceFolder}",
+            "type": "cortex-debug",
+            "executable": "${workspaceFolder}/build/BlackPillTemplate.elf",
+            "request": "launch",
+            "serverpath": "openocd",
+            "servertype": "openocd",
+            "device": "STM32F401",
+            "configFiles": [
+                "C:/STM32Toolchain/openocd-v0.12.0-i686-w64-mingw32/share/openocd/scripts/interface/stlink-v2.cfg",
+                "C:/STM32Toolchain/openocd-v0.12.0-i686-w64-mingw32/share/openocd/scripts/target/stm32f4x.cfg"
+            ],
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/STM32F401.svd",
+            "armToolchainPath": "C:/STM32Toolchain/arm-gnu-toolchain-13.3.rel1-mingw-w64-i686-arm-none-eabi/bin/"
         }
     ]
 }
