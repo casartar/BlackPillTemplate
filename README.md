@@ -71,4 +71,28 @@ $ ninja
 
 If ms-vscode.cpptools is not available use "Download Extension" on the right side of https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools and install the vsix file manually.
 
+## Docs you need
+1. https://www.st.com/resource/en/reference_manual/dm00096844-stm32f401xb-c-and-stm32f401xd-e-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf
+2. https://www.st.com/resource/en/datasheet/stm32f401cc.pdf
+3. https://deepbluembedded.com/stm32f411-black-pill-board-pinout-schematic-datasheet/
+
+## Challenges
+
+### Challenge 1
+1. Make the LED blink using for loop to waste some time.
+
+### Challenge 2
+1. Make pin B10 an input with pullup.
+2. If B10 is connected to GND the LED must be on and off otherwise.
+
+### Challenge 3
+Configure the USART to send 'c' all the time.
+1. Enable the clock for the USART and GPIOA
+2. Configure alternate function on GPIO PA9. Search for "Alternate function mapping" in the Datasheet to find the correct alternate function
+3. Be careful the alternate function register is represented as an array.
+4. Search for "Procedure" in the USART chapter and follow the instruction there.
+    1. For calculating the baudrate the chapter "Fractional baud rate generator", "Example 2" and the Table "Error calculation for programmed baud rates at f_PCLK = 16 MHz, oversampling by 16" will help.
+5. Let the USART send 'c' in the same frequency as the LED was blinking in the challenge before. 
+
+
 
