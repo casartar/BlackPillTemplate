@@ -26,6 +26,7 @@ $ sudo pacman -S openocd
 
 ### Copy to C://STM32Toolchain
 Should look like this:
+
 ![](images/filestructure.png)
 
 ### Add to path
@@ -36,6 +37,7 @@ C:\STM32Toolchain\openocd-v0.12.0-i686-w64-mingw32\bin
 C:\STM32Toolchain\ninja-win
 ```
 Should look like this:
+
 ![](images/path.png)
 
 Restart vscode to apply path variables
