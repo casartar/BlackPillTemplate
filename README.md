@@ -41,9 +41,8 @@ Should look like this:
 Restart vscode to apply path variables
 
 ### Driver Shizzle for cheap fucking ST-Link clone
-1. Delete original  driver
-2. Install Zadig. Download from https://zadig.akeo.ie/
-3. Replace Driver
+1. Install Zadig. Download from https://zadig.akeo.ie/
+2. Replace Driver
 ![](images/zadig.png)
 
 ## Compile the template
