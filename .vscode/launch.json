@@ -34,7 +34,8 @@
       "interface": "swd",
       "runToEntryPoint": "main",
       "svdFile": "${workspaceFolder}/STM32F401.svd",
-      "armToolchainPath": "/usr/bin/"
+      "armToolchainPath": "/usr/bin/" //,
+      //"gdbPath": "gdb-multiarch"
     },
     {
       "name": "ST-Link-Windows",
@@ -56,4 +57,3 @@
     }
   ]
 }
-
