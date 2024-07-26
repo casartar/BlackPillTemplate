@@ -55,6 +55,15 @@ Restart vscode to apply path variables
 2. Replace Driver
    ![](images/zadig.png)
 
+## Installation MacOS
+
+```
+brew install cmake
+brew install --cask gcc-arm-embeddedbrew
+brew install ninja
+brew install openocd
+```
+
 ## Compile the template
 
 ### Manjaro
@@ -65,15 +74,6 @@ $ chmod +x init_ninja.sh
 $ ./init_ninja.sh
 $ cd build
 $ ninja
-```
-
-### MacOS
-
-```
-brew install cmake
-brew install --cask gcc-arm-embeddedbrew
-brew install ninja
-brew install openocd
 ```
 
 ### Windows
